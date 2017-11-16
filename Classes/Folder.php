@@ -1,5 +1,9 @@
 <?php
 
+namespace Mindk;
+
+use Mindk\Files\File;
+
 /**
  * Created by PhpStorm.
  */
@@ -17,6 +21,7 @@ class Folder extends Entity
     public function __construct($location){
 
         parent::__construct($location);
+
         $this->name = basename($location);
     }
 
